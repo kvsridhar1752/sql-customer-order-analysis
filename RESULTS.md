@@ -2,6 +2,10 @@
 
 The analysis was run on a SQLite database containing 800 customers, 20 products, and 5,000 orders.
 
+## Dashboard
+
+![SQL Customer Order Analysis Dashboard](output/customer_order_dashboard.svg)
+
 ## Overall KPIs
 
 | Metric | Result |
@@ -23,10 +27,3 @@ The analysis was run on a SQLite database containing 800 customers, 20 products,
 Repeat customers generate 97.74% of total revenue, even though they represent most but not all customers. This highlights the importance of customer retention, repeat-purchase campaigns, and loyalty-focused marketing.
 
 The SQL analysis uses joins, aggregations, CTEs, case-based segmentation, and ranking logic to identify high-value customers, product performance, monthly trends, and repeat-purchase behavior.
-
-Run the project locally with:
-
-```bash
-python data/generate_data.py
-python analysis/run_sql_analysis.py
-```
